@@ -2,7 +2,7 @@ import React,{useContext} from 'react';
 import {Card,CardBody,Button,CardHeader} from 'reactstrap';
 import YouTube from 'react-youtube';
 import PropTypes from 'prop-types';
-import {Context} from './context';
+import {Context} from './Context';
 
 const Cardembd = ({id,label,src,start,end}) => {
     const opts = {

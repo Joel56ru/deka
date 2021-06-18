@@ -1,6 +1,6 @@
 import React,{useState,useContext,useEffect} from 'react';
 import {Row,Card,CardBody,CardTitle,Form, FormGroup, Button, Input, Col,Label,FormFeedback} from 'reactstrap';
-import {Context} from './context';
+import {Context} from './Context';
 
 const AddCard = () => {
     const [urlVideo, seturlVideo] = useState('');

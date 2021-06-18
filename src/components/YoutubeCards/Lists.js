@@ -1,6 +1,6 @@
 import React from 'react';
-import Cardembd from './card';
 import {Col} from 'reactstrap';
+import Cardembd from './Card';
 
 const Lists = ({cards}) => {
     
