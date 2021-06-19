@@ -1,10 +1,16 @@
 import React,{useState,useEffect} from 'react';
-import {Row,Col} from 'reactstrap';
+import {
+  Row,
+  Col,
+  Container,
+} from 'reactstrap';
 import Lists from '../components/YoutubeCards/Lists';
 import {Context} from './YoutubeCards/Context';
 import CardAdd from './YoutubeCards/Add';
+import NavbarComponent from './Navbar';
 
-const YouTubeCards = () => {
+
+const YouTubeComponent = () => {
   const [cards, setCards] = useState([]);
     const removeCard = id => {
       setCards(cards.filter(card =>{
@@ -42,6 +48,17 @@ const YouTubeCards = () => {
     </Row>
     </Context.Provider>
   );
+}
+
+const YouTubeCards = () =>{
+    return (
+        <>
+        <NavbarComponent/>
+        <Container fluid={true}>
+          <YouTubeComponent/>
+        </Container>
+        </>
+    );
 }
 
 export default YouTubeCards;
